@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // font-family: 'Secular One';
+}
+
+body{
+  background-image: url(../images/gif-portfolio.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+.buttonHeader{
+  font-size: 17px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: transparent;
+  color: $buttonColor;
+  cursor: pointer;
+  transition: 0.6s;
+  margin-bottom: 4%;
+
+  &.buttonHeader:hover {
+    color: black;
+    background-color: white;
+    border-color: $buttonHover;
+  }
+}
+.container1{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0px;
+}
+.sobreMim{
+  height: 50vh;
+}
+.textAboutMe{
+  font-size: 25px;
+}
+.container02{
+  color: white;
+  width: 50%;
+}
+.introduction2{
+  font-size: 20px;
+}
+.paragraphIntro{
+  font-size: 50px;
+}
+.descIntro{
+  font-size: 20px;
+}
+.btn{
+  padding: $padding-buttom1;
+  display: inline;
+  
+}
+.btn2{
+  margin-left: 2%;
+  padding: $padding-buttom2;
+}
+.projectsTitle{
+  padding: 50px;
+  font-size: 50px;
+}
+.carousel{
+  height: 100%;
+  width: 721px;
+  // margin-left: 8%;
+  // background-color: blue;
+
+}
+.container3{
+  margin-top: -100px;
+  height: 90vh;
+}
+.projPicture{
+  height: 350px;
+  width: 100%;
+}
+.projItemTitle{
+  font-size: 25px;
+  padding: 30px 0px 25px 10px;
+}
+.buttonProj{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: white
+}
+
+//Botão inferior VoltarTOPO
+.top-bottom{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: white;
+  color: grey;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+
+  &:hover{
+    color: black;
+  }
+}
+
+
