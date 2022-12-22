@@ -12,14 +12,26 @@ body{
 }
 
 .header{
+  
+}
+.header{
   display: flex;
   align-items: center;
   background-color: white;
   padding-top: 11px;
   padding-left: 20px;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-top: 0.5%;
   height: 40px;
+  a{
+    text-decoration: none;
+    text-align: center;
+    color: $buttonColor;
+
+    &:hover {
+      color: black;
+    }
+  }
 }
 .buttonHeader{
   font-size:  17px;
@@ -68,7 +80,6 @@ body{
 }
 ul, li{
   list-style: none;
-  margin: 10px 0px;
 }
 .container02{
   margin-top: 10%;
@@ -143,23 +154,7 @@ a{
   }
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    background-color: white;
-    height: 40px;
-    border-radius: 30px;  
-    a{
-      text-decoration: none;
-      text-align: center;
-      color: $buttonColor;
-  
-      &:hover {
-        color: black;
-      }
-    }
-}
+
 
 .footer{
   display: flex;
@@ -167,7 +162,7 @@ a{
   justify-content: center;
   background-color: white;
   height: 40px;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-bottom: 0.5%;
 
   a{
