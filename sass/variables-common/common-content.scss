@@ -1,7 +1,6 @@
 .border-radius{
   border-radius: 15px;
 }
-
 .arrowDown{
   width: 100px;
   height: 50px;
@@ -16,4 +15,16 @@
   width: 100px;
   height: 50px;
   margin-top: 6%;
+}
+
+#home{
+  // background-image: url(../images/wp1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sobreMim{
+  // background-image: url(../images/wp2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

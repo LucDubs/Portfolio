@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
 .border-radius {
   border-radius: 15px;
 }
@@ -21,6 +22,16 @@
   margin-top: 6%;
 }
 
+#home {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sobreMim {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -28,22 +39,26 @@
 }
 
 body {
-  background-image: url(../images/gif-portfolio.gif);
-  background-repeat: no-repeat;
+  background-image: url(../images/wp11.gif);
+  background-repeat: round;
   background-size: cover;
+  font-family: "Chivo mono";
 }
 
 .header {
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
-  margin-top: 1%;
+  padding-top: 11px;
+  padding-left: 20px;
+  border-radius: 30px;
+  margin-top: 0.5%;
+  height: 40px;
 }
 
 .buttonHeader {
   font-size: 17px;
-  padding: 0px 10px;
+  padding: 0px 5px;
   border-radius: 10px;
   background-color: transparent;
   border-color: transparent;
@@ -72,7 +87,7 @@ body {
 }
 
 .textAboutMe {
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .container02 {
@@ -85,11 +100,12 @@ body {
 }
 
 .paragraphIntro {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .descIntro {
-  font-size: 20px;
+  font-size: 24px;
+  color: rgb(174, 169, 169);
 }
 
 .btn {
@@ -109,7 +125,7 @@ body {
 
 .carousel {
   height: 100%;
-  width: 721px;
+  width: 900px;
 }
 
 .container3 {
@@ -148,6 +164,26 @@ a {
 }
 .top-bottom:hover {
   color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 0.5%;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(112, 108, 108);
+}
+.footer a:hover {
+  color: black;
+}
+.footer .copyLuc {
+  color: rgb(47, 47, 47);
 }
 
 /*# sourceMappingURL=style.css.map */
