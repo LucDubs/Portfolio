@@ -44,11 +44,16 @@ body{
   justify-content: center;
 }
 .contactContainer{
-  display: grid;
+  display: block;
+  margin-top: 18%;
   color: white;
-  height: 40vh;
+  height: 75vh;
   // justify-content: center;
-  align-items: center;
+  // text-align: center;
+  // align-items: center;
+}
+.contactItem{
+  display: block;
 }
 .container1{
   height: 100vh;
@@ -58,8 +63,12 @@ body{
 .textAboutMe{
   font-size: 24px;
 }
-.ul, li{
+.habilityAboutme{
   list-style: none;
+}
+ul, li{
+  list-style: none;
+  margin: 10px 0px;
 }
 .container02{
   margin-top: 10%;
@@ -133,32 +142,6 @@ a{
     color: black;
   }
 }
-
-// .footer{
-//   display: flex;
-//   align-items: center;
-//   background-color: white;
-//   border-radius: 10px;
-//   margin-bottom: 1%;
-
-//   .buttonHeader{
-//     font-size: 17px;
-//     padding: 0px 10px;
-//     border-radius: 10px;
-//     background-color: transparent;
-//     border-color: transparent;
-//     color: $buttonColor;
-//     cursor: pointer;
-//     transition: 0.6s;
-//     margin-bottom: 20%;
-  
-//     &.buttonHeader:hover {
-//       color: black;
-//       background-color: white;
-//       border-color: $buttonHover;
-//     }
-//   }
-// }
 
 .header{
     display: flex;
