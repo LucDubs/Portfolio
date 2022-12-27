@@ -3,16 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body{
   background-image: url(../images/wp11.gif);
   background-repeat: round;
   background-size: cover;
   font-family: 'Chivo mono'
 }
-
-.header{
-  
+.mainContainer{
+  width: 80%;
 }
 .header{
   display: flex;
@@ -50,44 +48,13 @@ body{
     border-color: $buttonHover;
   }
 }
-.introduction1{
+.homeContainer{
   display: grid;
   align-items: center;
   justify-content: center;
 }
-.contactContainer{
-  display: block;
-  margin-top: 18%;
-  color: white;
-  height: 75vh;
-  // justify-content: center;
-  // text-align: center;
-  // align-items: center;
-}
-.contactItem{
-  display: block;
-}
-.container1{
-  height: 100vh;
-  color: white;
-  padding: 0px;
-}
-.textAboutMe{
-  font-size: 24px;
-}
-.habilityAboutme{
-  list-style: none;
-}
 ul, li{
   list-style: none;
-}
-.container02{
-  margin-top: 10%;
-  color: white;
-  width: 100%;
-}
-.introduction2{
-  font-size: 20px;
 }
 .paragraphIntro{
   font-size: 60px;
@@ -105,30 +72,49 @@ ul, li{
   margin-left: 2%;
   padding: $padding-buttom2;
 }
+.aboutMe{
+  // margin: 0px 0%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerAboutMe{
+  height: 600vh;
+  color: white;
+  padding: 0px;
+}
+.textAboutMe{
+  font-size: 21px;
+}
+.textAboutMe2{
+  font-size: 21px;
+}
 .projectsTitle{
-  padding: 50px;
+  // padding: 50px;
   font-size: 50px;
 }
 .carousel{
-  height: 100%;
-  width: 900px;
-  // margin-left: 8%;
-  // background-color: blue;
+  // margin-top: -5%;
+  width: 700px;
 }
-.container3{
-  display: grid;
+.projectsContent{
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
-  height: 90vh;
 }
 .projPicture{
   height: 350px;
-  width: 100%;
+  width: auto;
 }
 .projItemTitle{
-  font-size: 25px;
-  padding: 30px 0px 25px 10px;
+  font-size: 28px;
+  padding: 30px 0px 10px 10px;
+}
+.projItemContent{
+  font-size: 17px;
 }
 .buttonProj{
   width: 35%;
@@ -138,6 +124,20 @@ a{
   color: white
 }
 
+.contactContainer{
+  display: grid;
+  align-items: center;
+  color: white;
+  height: 100vh;
+}
+.buttonContact{
+  width: 20%;
+}
+.container1{
+  height: 100vh;
+  color: white;
+  padding: 0px;
+}
 //Botão inferior VoltarTOPO
 .top-bottom{
   position: fixed;
@@ -153,9 +153,6 @@ a{
     color: black;
   }
 }
-
-
-
 .footer{
   display: flex;
   align-items: center;
@@ -181,4 +178,424 @@ a{
   }
 }
 
+// RESPONSIVIDADE
+@media (max-width: 1047px){
+  .carousel-control-prev, .carousel-control-next{
+    margin-bottom: 150px;
+  }
+  .buttonHome{
+    width: 50%;
+  }
+  .paragraphIntro{
+    font-size: 40px;
+  }
+  .textAboutMe{
+    font-size: 15px;
+  }
+  .textAboutMe2{
+    font-size: 15px;
+  }
+  .projectsTitle{
+    font-size: 40px;
+  }
+  .carousel{
+    margin-top: 20px;
+    width: 550px;
+  }
+  .projPicture{
+    height: 300px;
+  }
+  .projItemTitle{
+    font-size: 20px;
+  }
+  .projItemContent{
+    font-size: 15px;
+  }
+  .buttonContact{
+    width: 20%;
+  }
+}
+@media (max-width: 993px){
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+  .buttonContact{
+    width: 30%;
+  }
+  
+}
+@media(max-width: 841px){
+  .paragraphIntro{
+    font-size: 30px;
+  }
+  .projectsTitle{
+    font-size: 30px;
+  }
+  .carousel{
+    margin-top: 20px;
+    width: 450px;
+  }
+  .projPicture{
+    height: 280px;
+  }
+  .projItemTitle{
+    font-size: 20px;
+  }
+  .projItemContent{
+    font-size: 15px;
+  }
+}
+@media (max-width: 671px){
+  .buttonContact{
+    width: 40%;
+  }
+}
 
+@media (max-width: 639px){
+  .paragraphIntro{
+    font-size: 30px;
+  }
+  .projectsTitle{
+    font-size: 25px;
+  }
+  .carousel{
+    margin-top: 20px;
+    width: 450px;
+  }
+  .projPicture{
+    height: 280px;
+  }
+  .projItemTitle{
+    font-size: 20px;
+  }
+  .projItemContent{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px){
+  .aboutMeMain{
+    display: grid;
+  }
+  .aboutMeContent{
+    margin-top: 20px;
+  }
+  .textAboutMe{
+    margin-top: 10px;
+  }
+  .textAboutMe2{
+    margin-top: 10px;
+    // margin-right: 20px;
+    margin-right: 35px;
+  }
+  .arrowDown2{
+    margin-top: -14px;
+    // margin-left: 40px;
+  }
+  .arrowDown3{
+    margin-top: 14px;
+    margin-left: 6%;
+  }
+  .container1{
+    margin-top: 40%;
+  }
+}
+@media (max-width: 537px){
+  .projectsTitle{
+    font-size: 20px;
+  }
+  .carousel{
+    margin-top: 23px;
+    width: 400px;
+  }
+  .projPicture{
+    height: 280px;
+  }
+  .projItemTitle{
+    font-size: 20px;
+  }
+  .projItemContent{
+    font-size: 15px;
+  }
+  .header{
+    font-size: 14px;
+    // padding-top: 11px;
+    // padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    height: 40px;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .buttonHeader{
+    font-size:  15px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    color: $buttonColor;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-bottom: 2.5%;
+  
+    &.buttonHeader:hover {
+      color: black;
+      background-color: white;
+      border-color: $buttonHover;
+    }
+  }
+
+}
+@media (max-width: 510px){
+  .buttonContact{
+    width: 80%;
+  }
+}
+
+@media (max-width: 485px){
+  .header{
+    // display: grid;
+    font-size: 5px;
+    // padding-top: 11px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    height: 40px;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .buttonHeader{
+    font-size: 14px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    color: $buttonColor;
+    cursor: pointer;
+    transition: 0.6s;
+    // margin-left: 20px;
+    margin-bottom: 2.5%;
+  
+    &.buttonHeader:hover {
+      color: black;
+      background-color: white;
+      border-color: $buttonHover;
+    }
+  }
+  .container1{
+    margin-top: 40%;
+  }
+  .projectsTitle{
+    font-size: 20px;
+  }
+  .carousel{
+    margin-top: 23px;
+    width: 400px;
+  }
+  .projPicture{
+    height: 280px;
+  }
+  .projItemTitle{
+    font-size: 20px;
+  }
+  .projItemContent{
+    font-size: 15px;
+  }
+  .arrowDown3{
+    margin-top: 20px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 448px){
+  .header{
+    // display: grid;
+    font-size: 5px;
+    // padding-top: 11px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    height: 80px;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .projectsTitle{
+    font-size: 17px;
+  }
+  .carousel{
+    margin-top: 23px;
+    width: 400px;
+  }
+  .projPicture{
+    height: 280px;
+  }
+  .projItemTitle{
+    font-size: 14px;
+  }
+  .projItemContent{
+    font-size: 12px;
+  }
+  .buttonHeader{
+    font-size:  19px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    color: $buttonColor;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 10%;
+    margin-bottom: 2.5%;
+  
+    &.buttonHeader:hover {
+      color: black;
+      background-color: white;
+      border-color: $buttonHover;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .header{
+    // display: grid;
+    font-size: 5px;
+    // padding-top: 11px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    height: 80px;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .buttonHeader{
+    font-size:  15px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    color: $buttonColor;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 10%;
+    margin-bottom: 2.5%;
+  
+    &.buttonHeader:hover {
+      color: black;
+      background-color: white;
+      border-color: $buttonHover;
+    }
+  }
+  .buttonHome{
+    width: 60%;
+  }
+}
+
+@media (max-width: 375px){
+  .container1{
+    margin-top: 50%;
+  }
+  .projectsTitle{
+    font-size: 15px;
+  }
+  .carousel{
+    margin-top: 23px;
+    width: 350px;
+  }
+  .projPicture{
+    height: 230px;
+  }
+  .projItemTitle{
+    font-size: 13px;
+  }
+  .projItemContent{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 335px){
+  .header{
+    // display: grid;
+    font-size: 5px;
+    // padding-top: 11px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    height: 80px;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .buttonHeader{
+    font-size:  14px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    color: $buttonColor;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 8%;
+    margin-bottom: 2.5%;
+  
+    &.buttonHeader:hover {
+      color: black;
+      background-color: white;
+      border-color: $buttonHover;
+    }
+  }
+  .buttonHome{
+    width: 80%;
+  }
+  .arrowDown{
+    margin-bottom: 50%;
+  }
+  .arrowDown2{
+    margin-bottom: 50%;
+  }
+  .projectsTitle{
+    font-size: 13px;
+  }
+  .carousel{
+    margin-top: 23px;
+    width: 300px;
+  }
+  .projPicture{
+    height: 240px;
+  }
+  .projItemTitle{
+    font-size: 13px;
+  }
+  .projItemContent{
+    font-size: 12px;
+  }
+}

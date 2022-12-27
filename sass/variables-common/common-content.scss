@@ -9,22 +9,20 @@
 .arrowDown2{
   width: 100px;
   height: 50px;
-  margin-top: -10%;
+  margin-top: 4%;
 }
 .arrowDown3{
   width: 100px;
   height: 50px;
-  margin-top: 6%;
+  margin-top: 2%;
 }
 
-#home{
-  // background-image: url(../images/wp1.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+.buttonHome{
+  width: 40%;
 }
-
-#sobreMim{
-  // background-image: url(../images/wp2.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+.buttonProj{
+  width: 35%;
+}
+.buttonContact{
+  width: 60%;
 }
