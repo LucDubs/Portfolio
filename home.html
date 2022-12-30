@@ -17,40 +17,39 @@
   <title> Portfolio - Lucas de Sousa Sampaio</title>
 </head>
 <body>
-  <div class="container mainContainer">
+  <div class="mainContainer">
   <!-- HEADER -->
   <header>
-    <div class="container header">
-      <div class="buttons">
-        <a href="#home"><button class="buttonHeader">Home</button></a>
-        <a href="#sobreMim"><button class="buttonHeader">Sobre mim</button></a>
-        <a href="#projetos"><button class="buttonHeader">Projetos</button></a>
-        <a href="#contact"><button class="buttonHeader">Contato</button></a>
-      </div>
+    <div class="header" id="header">
+        <a href="#home"><button class="buttonHeader btn-outline-primary button1">Início</button></a>
+        <a href="#sobreMim"><button class="buttonHeader btn-outline-primary">Sobre</button></a>
+        <a href="#projetos"><button class="buttonHeader btn-outline-primary">Projetos</button></a>
+        <a href="#contact"><button class="buttonHeader btn-outline-primary">Contato</button></a>
     </div>
   </header>
 
   <!-- HOME -->
   <div class="container1 homeContainer text-center" data-aos="fade-up" data-aos-duration="2000" id="home" > 
     <div class="container01">
-      <h1 class="paragraphIntro">Olá, me chamo <br>Lucas de Sousa</h1>
+      <h1 class="paragraphIntro buttonTitleHome">Olá, meu nome é<br>Lucas de Sousa</h1>
       <p class="descIntro">Desenvolvedor Fullstack</p>
         <div class="buttonItem">
           <a href="#contact"><button class="btn btn-outline-light border-radius buttonHome" href="url" download="nome-do-arquivo">Contate-me</button></a>
         </div>
-      <a href="#sobreMim"><img src="./images/arrowDown.gif" alt="arrowDown" class="arrowDown"></a>
+        <a href="#header"><img src="./images/arrowDown.gif" alt="arrowDown" class="arrowDownUpside"></a><br>
+        <a href="#sobreMim"><img src="./images/arrowDown.gif" alt="arrowDown" class="arrowDown"></a>
     </div>    
   </div>
 
   <!-- SOBRE MIM -->
-  <div class="aboutMe text-center" id="sobreMim" > 
+  <div class="aboutMe text-center" id="sobreMim"> 
       <div class="aboutMeMain row ">
-        <div class="aboutMeContent col" data-aos="fade-up" data-aos-duration="2000" >
-          <h1 class="paragraphIntro">Sobre mim</h1>
+        <div class="aboutMeContent col" data-aos="fade-up" data-aos-duration="2000">
+          <h1 class="paragraphIntro buttonTitleHome">Sobre mim</h1>
           <p class="textAboutMe">O incrível é logo ali e é exatamente o lugar ao qual quero chegar, junto de pessoas como você! Onde possuimos objetivos em comum, sendo parte destes: Sonhar grande, planejar e realizar. Meu foco principal está na criação de interfaces (front-end) e desenvolvimento de lógica (back-end) para web.<br><br> Nascido em Brasília-DF, 23 anos, procuro desenvolver minha paixão por tecnologia e softwares através de projetos e contatos com pessoas da área</p>
         </div>
         <div class="aboutMeContent col data-aos="fade-up" data-aos-duration="2000"">
-            <h1 class="paragraphIntro" data-aos="fade-down" data-aos-duration="2000">Habilidades</h1>
+            <h1 class="paragraphIntro buttonTitleHome" data-aos="fade-down" data-aos-duration="2000">Habilidades</h1>
           <ul class="textAboutMe2 col" data-aos="fade-down" data-aos-duration="2000">
             <li>Javascript</li>
             <li>Typescript</li>
@@ -65,6 +64,7 @@
             <li>Scrum</li>  
           </ul>
         </div>
+        <a href="#home"><img src="./images/arrowDown.gif" alt="arrowDown" class="arrowDown2Upside2"></a>
         <a href="#projetos"><img src="./images/arrowDown.gif" alt="arrowDown" class="arrowDown2"></a>
       </div>  
       
@@ -100,7 +100,7 @@
 
   <!-- PROJETOS -->
   <div class="container1" id="projetos">
-    <h1 class="projectsTitle text-center " data-aos="fade-up-right" data-aos-duration="2000">Alguns de meus [ Projetos ]</h1>
+    <h1 class="projectsTitle text-center buttonTitleHome" data-aos="fade-up-right" data-aos-duration="2000">Alguns de meus Projetos</h1>
     <div class="projectsContent text-center">
       <div class="" data-aos="zoom-in-up" data-aos-duration="2000">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -108,7 +108,7 @@
               <div class="carousel-item active" >
                   <img src="./images/project1.png" class="d-block w-100 projPicture" alt="...">
                   <p class="projItemTitle">SPACE X's REPLICATION</p>
-                  <p class="projItemContent">Esta é uma cópia feita do site oficial da SpaceX, com o objetivo de construir um projeto profissional usando apenas HTML, CSS e Sass com Bootstrap e também AOS para animação de texto</p>
+                  <p class="projItemContent">Esta é uma cópia profissional feita do site oficial da SpaceX, usando apenas HTML, CSS e Sass com Bootstrap e também a lib AOS (mesma utilizada neste site) para animação de texto</p>
                   <a href="https://github.com/LucDubs/SpaceX-Website-Project" target="_blank"><button class="btn btn-outline-light border-radius buttonProj">Details</button></a>
               </div>
               <div class="carousel-item" >
@@ -120,7 +120,7 @@
               <div class="carousel-item">
                   <img src="./images/project3.png" class="d-block w-100 projPicture" alt="...">
                   <p class="projItemTitle">TASK ORGANIZER</p>
-                  <p class="projItemContent">Orgnizador de tarefas avançado, feito com HTML, CSS, Javascript, Axios e React (com foco específico no aproveitamento dos elementos desta tecnologia)</p>
+                  <p class="projItemContent">Orgnizador de tarefas avançado, feito com HTML, CSS, Javascript, Axios e React (com foco específico nesta tecnologia)</p>
                   <a href="https://github.com/LucDubs/Projeto-TaskOrganizer-React" target="_blank"><button class="btn btn-outline-light border-radius buttonProj">Details</button></a>
               </div>
           </div>
@@ -137,6 +137,9 @@
       
     </div>
     <div class="container text-center">
+      <a href="#sobreMim"><img src="./images/arrowDown.gif" alt="arrowDown3" class="arrowDown3Upside3"></a>
+    </div>
+    <div class="container text-center">
       <a href="#contact"><img src="./images/arrowDown.gif" alt="arrowDown3" class="arrowDown3"></a>
     </div>
   </div>
@@ -144,16 +147,17 @@
   <!-- CONTATO -->
   <div class="contactContainer text-center" data-aos="fade-up" data-aos-duration="2000" id="contact" > 
     <div class="contactItem">
-      <h1 class="paragraphIntro">Contato</h1>
+      <h1 class="paragraphIntro buttonTitleHome">Contato</h1>
       <p class="descIntro">61-98153-3962</p>
         <div class="col buttonItem">
-          <a href="https://wa.me/5561981533962" target="_blank"><button class="btn btn-outline-light border-radius buttonContact" href="url" download="nome-do-arquivo">Whatsapp</button></a>
-          <a href="#contact"><button class="btn btn-outline-light border-radius buttonContact" href="url" download="nome-do-arquivo">Email</button></a>
+          <a href="https://wa.me/5561981533962" target="_blank"><button class="btn btn-outline-light border-radius buttonContact">Whatsapp</button></a>
+          <a href="mailto:lucas.dubs5@gmail.com" target="_blank"><button class="btn btn-outline-light border-radius buttonContact">Email</button></a>
         </div>
         <div class="col buttonItem mt-1">
-          <a href="#contact"><button class="btn btn-outline-light border-radius buttonContact" href="url" download="nome-do-arquivo">Download CV</button></a>
-          <a href="#contact"><button class="btn btn-outline-light border-radius buttonContact" href="url" download="nome-do-arquivo">Linkedin</button></a>
+          <a href="images/Lucas-de-Sousa-Sampaio-Curriculo.pdf" download="CV Lucas de Sousa Sampaio"><button class="btn btn-outline-light border-radius buttonContact">Download CV</button></a>
+          <a href="https://www.linkedin.com/in/lucas-de-sousa-sampaio-4186101b9" target="_blank"><button class="btn btn-outline-light border-radius buttonContact" href="url">Linkedin</button></a>
         </div>
+        <a href="#projetos"><img src="./images/arrowDown.gif" alt="arrowDown" class="arrowDownUpsideContact"></a>
     </div>    
   </div>
   <!-- <div class="container1 contactContainer text-center" id="contact">
@@ -170,8 +174,8 @@
   </div> -->
 
   <!-- FOOTER -->
-  <footer class="container text-center footer">
-    <span class="me-4 copyLuc">Lucas S Sampaio &copy;2022</span>
+  <footer class="text-center footer">
+    <span class="copyLuc">Lucas S Sampaio &copy;2022</span>
   </footer>
   </div>
 

@@ -1,20 +1,57 @@
 .border-radius{
   border-radius: 15px;
 }
+.buttonTitleHome{
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  border-radius: 15px;
+
+  &:hover{
+    background-color: rgba(10, 6, 90, 0.4);
+  }
+}
 .arrowDown{
   width: 100px;
   height: 50px;
-  margin-top: 20%;
+  // margin-top: 2%;
+}
+.arrowDownUpside{
+  width: 100px;
+  height: 50px;
+  margin-top: 5%;
+  margin-right: 5px;
+  transform: rotate(180deg);
 }
 .arrowDown2{
   width: 100px;
   height: 50px;
-  margin-top: 4%;
+  margin-top: -10%;
 }
+.arrowDown2Upside2{
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    transform: rotate(180deg);
+}
+
 .arrowDown3{
   width: 100px;
   height: 50px;
-  margin-top: 2%;
+  margin-top: -10px;
+}
+.arrowDown3Upside3{
+  width: 100px;
+  height: 50px;
+  margin-top: 4%;
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
+.arrowDownUpsideContact{
+  width: 100px;
+  height: 50px;
+  margin-top: 3%;
+  transform: rotate(180deg);
 }
 
 .buttonHome{
@@ -26,3 +63,28 @@
 .buttonContact{
   width: 60%;
 }
+
+
+/*Em caso de querer mudar os fundos de cada um dos containers, é só descomentar os containers específicos abaixo.*/
+
+// .homeContainer{
+//   background-image: url(../../images/wp4.gif);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+// .aboutMe{
+//   background-image: url(../images/wp12.jpg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+// #projetos{
+//   background-image: url(../../images/wp12.jpg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// .contactContainer{
+//   background-image: url(../../images/wp12.jpg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }

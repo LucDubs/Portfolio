@@ -10,43 +10,33 @@ body{
   font-family: 'Chivo mono'
 }
 .mainContainer{
-  width: 80%;
+  width: 100%;
 }
 .header{
-  display: flex;
-  align-items: center;
+  display: inline-block;
   background-color: white;
   padding-top: 11px;
   padding-left: 20px;
   border-radius: 10px;
-  margin-top: 0.5%;
-  height: 40px;
-  a{
-    text-decoration: none;
-    text-align: center;
-    color: $buttonColor;
-
-    &:hover {
-      color: black;
-    }
-  }
+  // margin-top: 0.5%;
+  height: 50px;
+  width: 100%;
+}
+.btn-outline-primary:hover{
+  background-color: rgb(10, 6, 90);
+  border: none;
 }
 .buttonHeader{
-  font-size:  17px;
-  padding: 0px 5px;
+  margin-bottom: 90px;
+  min-width: 10%;
+  font-size: 17px;
   border-radius: 10px;
   background-color: transparent;
   border-color: transparent;
   color: $buttonColor;
   cursor: pointer;
   transition: 0.6s;
-  margin-bottom: 2.5%;
-
-  &.buttonHeader:hover {
-    color: black;
-    background-color: white;
-    border-color: $buttonHover;
-  }
+  margin-bottom: 5%;
 }
 .homeContainer{
   display: grid;
@@ -56,12 +46,15 @@ body{
 ul, li{
   list-style: none;
 }
+
 .paragraphIntro{
+  // border-bottom: 5px solid white;
+  // border-radius: 0px;
   font-size: 60px;
 }
 .descIntro{
   font-size: 24px;
-  color: rgb(174, 169, 169);
+  color: rgb(140, 138, 138);
 }
 .btn{
   padding: $padding-buttom1;
@@ -75,15 +68,11 @@ ul, li{
 .aboutMe{
   // margin: 0px 0%;
   height: 100vh;
+  padding: 0px 55px;
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.containerAboutMe{
-  height: 600vh;
-  color: white;
-  padding: 0px;
+  // align-items: center;
 }
 .textAboutMe{
   font-size: 21px;
@@ -99,6 +88,14 @@ ul, li{
   // margin-top: -5%;
   width: 700px;
 }
+.carousel-control-next{
+  margin-right: -3%;
+  margin-bottom: 29%;
+}
+.carousel-control-prev{
+  margin-left: -3%;
+  margin-bottom: 29%;
+}
 .projectsContent{
   width: 100%;
   display: flex;
@@ -106,18 +103,23 @@ ul, li{
   align-items: center;
 }
 .projPicture{
+  border: 3px solid white;
+  border-radius: 15px;
+  margin-top: 1%;
   height: 350px;
   width: auto;
 }
 .projItemTitle{
   font-size: 28px;
-  padding: 30px 0px 10px 10px;
+  padding: 10px 0px 10px 10px;
 }
 .projItemContent{
+  margin-top: -15px;
   font-size: 17px;
 }
 .buttonProj{
-  width: 35%;
+  width: 36%;
+  text-align: center;
 }
 a{
   text-decoration: none;
@@ -141,7 +143,7 @@ a{
 //Botão inferior VoltarTOPO
 .top-bottom{
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
   right: 20px;
   background-color: white;
   color: grey;
@@ -160,25 +162,18 @@ a{
   background-color: white;
   height: 40px;
   border-radius: 10px;
-  margin-bottom: 0.5%;
+  // margin-bottom: 0.5%;
+  font-size: 17px;
+  // margin-left: 0px;
 
-  a{
-    text-decoration: none;
-    height: 75%;
-    text-align: center;
-    color: $buttonColor;
-
-    &:hover {
-      color: black;
-    }
-  }
-
+  &
   .copyLuc{
-    color: rgb(47, 47, 47);
+    color: $buttonColor;
+    margin-left: 45px;
   }
 }
 
-// RESPONSIVIDADE
+///////////////////////// RESPONSIVIDADE
 @media (max-width: 1047px){
   .carousel-control-prev, .carousel-control-next{
     margin-bottom: 150px;
@@ -220,6 +215,9 @@ a{
     display: flex;
     justify-content: center;
   }
+  .buttonHeader{
+    padding: 0px 20px;
+  }
   .buttonContact{
     width: 30%;
   }
@@ -247,6 +245,9 @@ a{
   }
 }
 @media (max-width: 671px){
+  .buttonHeader{
+    font-size: 15px;
+  }
   .buttonContact{
     width: 40%;
   }
@@ -257,7 +258,7 @@ a{
     font-size: 30px;
   }
   .projectsTitle{
-    font-size: 25px;
+    font-size: 30px;
   }
   .carousel{
     margin-top: 20px;
@@ -274,7 +275,7 @@ a{
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 610px){
   .aboutMeMain{
     display: grid;
   }
@@ -289,21 +290,17 @@ a{
     // margin-right: 20px;
     margin-right: 35px;
   }
-  .arrowDown2{
-    margin-top: -14px;
-    // margin-left: 40px;
-  }
-  .arrowDown3{
-    margin-top: 14px;
-    margin-left: 6%;
-  }
   .container1{
     margin-top: 40%;
+  }
+  .aboutMe{
+    height: 130vh;
   }
 }
 @media (max-width: 537px){
   .projectsTitle{
-    font-size: 20px;
+    margin-top: 50%;
+    font-size: 30px;
   }
   .carousel{
     margin-top: 23px;
@@ -324,35 +321,8 @@ a{
     // padding-left: 20px;
     border-radius: 10px;
     margin-bottom: 10%;
-    height: 40px;
-    a{
-      text-decoration: none;
-      text-align: center;
-      color: $buttonColor;
-  
-      &:hover {
-        color: black;
-      }
-    }
+    // height: 40px;
   }
-  .buttonHeader{
-    font-size:  15px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: $buttonColor;
-    cursor: pointer;
-    transition: 0.6s;
-    margin-bottom: 2.5%;
-  
-    &.buttonHeader:hover {
-      color: black;
-      background-color: white;
-      border-color: $buttonHover;
-    }
-  }
-
 }
 @media (max-width: 510px){
   .buttonContact{
@@ -364,43 +334,17 @@ a{
   .header{
     // display: grid;
     font-size: 5px;
-    // padding-top: 11px;
+    padding: 6px 175px;
     border-radius: 10px;
     margin-bottom: 10%;
     height: 40px;
-    a{
-      text-decoration: none;
-      text-align: center;
-      color: $buttonColor;
-  
-      &:hover {
-        color: black;
-      }
-    }
-  }
-  .buttonHeader{
-    font-size: 14px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: $buttonColor;
-    cursor: pointer;
-    transition: 0.6s;
-    // margin-left: 20px;
-    margin-bottom: 2.5%;
-  
-    &.buttonHeader:hover {
-      color: black;
-      background-color: white;
-      border-color: $buttonHover;
-    }
   }
   .container1{
-    margin-top: 40%;
+    margin-top: 50%;
   }
   .projectsTitle{
-    font-size: 20px;
+    margin-top: 60%;
+    font-size: 30px;
   }
   .carousel{
     margin-top: 23px;
@@ -415,41 +359,37 @@ a{
   .projItemContent{
     font-size: 15px;
   }
-  .arrowDown3{
-    margin-top: 20px;
-    margin-right: 5px;
-  }
 }
 @media (max-width: 448px){
   .header{
-    // display: grid;
-    font-size: 5px;
-    // padding-top: 11px;
+    display: grid;
+    padding: 0px 0px;
+    grid-template-columns: 1fr 1fr;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     height: 80px;
-    a{
-      text-decoration: none;
-      text-align: center;
-      color: $buttonColor;
-  
-      &:hover {
-        color: black;
-      }
+
+    .buttonHeader{
+      font-size: 18px;
+      margin-bottom: -15%;
     }
   }
+  .buttonProj{
+    margin-bottom: 15px;
+  }
   .projectsTitle{
-    font-size: 17px;
+    margin-top: 60%;
+    font-size: 30px;
   }
   .carousel{
     margin-top: 23px;
-    width: 400px;
+    width: 350px;
   }
   .projPicture{
-    height: 280px;
+    height: 250px;
   }
   .projItemTitle{
-    font-size: 14px;
+    font-size: 20px;
   }
   .projItemContent{
     font-size: 12px;
@@ -465,62 +405,37 @@ a{
     transition: 0.6s;
     margin-left: 10%;
     margin-bottom: 2.5%;
-  
-    &.buttonHeader:hover {
-      color: black;
-      background-color: white;
-      border-color: $buttonHover;
-    }
-  }
 }
-
 @media (max-width: 390px){
   .header{
     // display: grid;
-    font-size: 5px;
+    font-size: 15px;
     // padding-top: 11px;
     border-radius: 10px;
     margin-bottom: 10%;
     height: 80px;
-    a{
-      text-decoration: none;
-      text-align: center;
-      color: $buttonColor;
-  
-      &:hover {
-        color: black;
-      }
-    }
   }
   .buttonHeader{
-    font-size:  15px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: $buttonColor;
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 10%;
-    margin-bottom: 2.5%;
-  
-    &.buttonHeader:hover {
-      color: black;
-      background-color: white;
-      border-color: $buttonHover;
-    }
+    font-size:  13px;
   }
   .buttonHome{
     width: 60%;
   }
+  .projPicture{
+    margin-right: 200px;
+  }
 }
 
-@media (max-width: 375px){
+@media (max-width: 379px){
+  .arrowDown2{
+    margin-bottom: -20px;
+  }
   .container1{
     margin-top: 50%;
   }
   .projectsTitle{
-    font-size: 15px;
+    margin-top: 60%;
+    font-size: 25px;
   }
   .carousel{
     margin-top: 23px;
@@ -537,41 +452,17 @@ a{
   }
 }
 
-@media (max-width: 335px){
+@media (max-width: 344px){
   .header{
-    // display: grid;
-    font-size: 5px;
-    // padding-top: 11px;
     border-radius: 10px;
     margin-bottom: 10%;
     height: 80px;
-    a{
-      text-decoration: none;
-      text-align: center;
-      color: $buttonColor;
-  
-      &:hover {
-        color: black;
-      }
-    }
   }
-  .buttonHeader{
-    font-size:  14px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: $buttonColor;
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 8%;
-    margin-bottom: 2.5%;
-  
-    &.buttonHeader:hover {
-      color: black;
-      background-color: white;
-      border-color: $buttonHover;
-    }
+  .paragraphIntro{
+    font-size: 25px;
+  }
+  .descIntro{
+    font-size: 18px;
   }
   .buttonHome{
     width: 80%;
@@ -579,11 +470,9 @@ a{
   .arrowDown{
     margin-bottom: 50%;
   }
-  .arrowDown2{
-    margin-bottom: 50%;
-  }
   .projectsTitle{
-    font-size: 13px;
+    margin-top: 60%;
+    font-size: 25px;
   }
   .carousel{
     margin-top: 23px;
@@ -593,9 +482,10 @@ a{
     height: 240px;
   }
   .projItemTitle{
-    font-size: 13px;
+    font-size: 12px;
   }
   .projItemContent{
     font-size: 12px;
   }
+}
 }

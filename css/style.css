@@ -1,25 +1,65 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
 .border-radius {
   border-radius: 15px;
 }
 
+.buttonTitleHome {
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  border-radius: 15px;
+}
+.buttonTitleHome:hover {
+  background-color: rgba(10, 6, 90, 0.4);
+}
+
 .arrowDown {
   width: 100px;
   height: 50px;
-  margin-top: 20%;
+}
+
+.arrowDownUpside {
+  width: 100px;
+  height: 50px;
+  margin-top: 5%;
+  margin-right: 5px;
+  transform: rotate(180deg);
 }
 
 .arrowDown2 {
   width: 100px;
   height: 50px;
-  margin-top: 4%;
+  margin-top: -10%;
+}
+
+.arrowDown2Upside2 {
+  width: 100px;
+  height: 50px;
+  margin-right: 5px;
+  transform: rotate(180deg);
 }
 
 .arrowDown3 {
   width: 100px;
   height: 50px;
-  margin-top: 2%;
+  margin-top: -10px;
+}
+
+.arrowDown3Upside3 {
+  width: 100px;
+  height: 50px;
+  margin-top: 4%;
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
+
+.arrowDownUpsideContact {
+  width: 100px;
+  height: 50px;
+  margin-top: 3%;
+  transform: rotate(180deg);
 }
 
 .buttonHome {
@@ -34,6 +74,7 @@
   width: 60%;
 }
 
+/*Em caso de querer mudar os fundos de cada um dos containers, é só descomentar os containers específicos abaixo.*/
 * {
   padding: 0;
   margin: 0;
@@ -48,43 +89,35 @@ body {
 }
 
 .mainContainer {
-  width: 80%;
+  width: 100%;
 }
 
 .header {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   background-color: white;
   padding-top: 11px;
   padding-left: 20px;
   border-radius: 10px;
-  margin-top: 0.5%;
-  height: 40px;
+  height: 50px;
+  width: 100%;
 }
-.header a {
-  text-decoration: none;
-  text-align: center;
-  color: rgb(112, 108, 108);
-}
-.header a:hover {
-  color: black;
+
+.btn-outline-primary:hover {
+  background-color: rgb(10, 6, 90);
+  border: none;
 }
 
 .buttonHeader {
+  margin-bottom: 90px;
+  min-width: 10%;
   font-size: 17px;
-  padding: 0px 5px;
   border-radius: 10px;
   background-color: transparent;
   border-color: transparent;
-  color: rgb(112, 108, 108);
+  color: rgb(52, 52, 52);
   cursor: pointer;
   transition: 0.6s;
-  margin-bottom: 2.5%;
-}
-.buttonHeader.buttonHeader:hover {
-  color: black;
-  background-color: white;
-  border-color: rgb(33, 33, 33);
+  margin-bottom: 5%;
 }
 
 .homeContainer {
@@ -103,7 +136,7 @@ ul, li {
 
 .descIntro {
   font-size: 24px;
-  color: rgb(174, 169, 169);
+  color: rgb(140, 138, 138);
 }
 
 .btn {
@@ -118,16 +151,10 @@ ul, li {
 
 .aboutMe {
   height: 100vh;
+  padding: 0px 55px;
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.containerAboutMe {
-  height: 600vh;
-  color: white;
-  padding: 0px;
 }
 
 .textAboutMe {
@@ -146,6 +173,16 @@ ul, li {
   width: 700px;
 }
 
+.carousel-control-next {
+  margin-right: -3%;
+  margin-bottom: 29%;
+}
+
+.carousel-control-prev {
+  margin-left: -3%;
+  margin-bottom: 29%;
+}
+
 .projectsContent {
   width: 100%;
   display: flex;
@@ -154,21 +191,26 @@ ul, li {
 }
 
 .projPicture {
+  border: 3px solid white;
+  border-radius: 15px;
+  margin-top: 1%;
   height: 350px;
   width: auto;
 }
 
 .projItemTitle {
   font-size: 28px;
-  padding: 30px 0px 10px 10px;
+  padding: 10px 0px 10px 10px;
 }
 
 .projItemContent {
+  margin-top: -15px;
   font-size: 17px;
 }
 
 .buttonProj {
-  width: 35%;
+  width: 36%;
+  text-align: center;
 }
 
 a {
@@ -195,7 +237,7 @@ a {
 
 .top-bottom {
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
   right: 20px;
   background-color: white;
   color: grey;
@@ -214,19 +256,11 @@ a {
   background-color: white;
   height: 40px;
   border-radius: 10px;
-  margin-bottom: 0.5%;
-}
-.footer a {
-  text-decoration: none;
-  height: 75%;
-  text-align: center;
-  color: rgb(112, 108, 108);
-}
-.footer a:hover {
-  color: black;
+  font-size: 17px;
 }
 .footer .copyLuc {
-  color: rgb(47, 47, 47);
+  color: rgb(52, 52, 52);
+  margin-left: 45px;
 }
 
 @media (max-width: 1047px) {
@@ -270,6 +304,9 @@ a {
     display: flex;
     justify-content: center;
   }
+  .buttonHeader {
+    padding: 0px 20px;
+  }
   .buttonContact {
     width: 30%;
   }
@@ -296,6 +333,9 @@ a {
   }
 }
 @media (max-width: 671px) {
+  .buttonHeader {
+    font-size: 15px;
+  }
   .buttonContact {
     width: 40%;
   }
@@ -305,7 +345,7 @@ a {
     font-size: 30px;
   }
   .projectsTitle {
-    font-size: 25px;
+    font-size: 30px;
   }
   .carousel {
     margin-top: 20px;
@@ -321,7 +361,7 @@ a {
     font-size: 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 610px) {
   .aboutMeMain {
     display: grid;
   }
@@ -335,20 +375,17 @@ a {
     margin-top: 10px;
     margin-right: 35px;
   }
-  .arrowDown2 {
-    margin-top: -14px;
-  }
-  .arrowDown3 {
-    margin-top: 14px;
-    margin-left: 6%;
-  }
   .container1 {
     margin-top: 40%;
+  }
+  .aboutMe {
+    height: 130vh;
   }
 }
 @media (max-width: 537px) {
   .projectsTitle {
-    font-size: 20px;
+    margin-top: 50%;
+    font-size: 30px;
   }
   .carousel {
     margin-top: 23px;
@@ -367,31 +404,6 @@ a {
     font-size: 14px;
     border-radius: 10px;
     margin-bottom: 10%;
-    height: 40px;
-  }
-  .header a {
-    text-decoration: none;
-    text-align: center;
-    color: rgb(112, 108, 108);
-  }
-  .header a:hover {
-    color: black;
-  }
-  .buttonHeader {
-    font-size: 15px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(112, 108, 108);
-    cursor: pointer;
-    transition: 0.6s;
-    margin-bottom: 2.5%;
-  }
-  .buttonHeader.buttonHeader:hover {
-    color: black;
-    background-color: white;
-    border-color: rgb(33, 33, 33);
   }
 }
 @media (max-width: 510px) {
@@ -402,39 +414,17 @@ a {
 @media (max-width: 485px) {
   .header {
     font-size: 5px;
+    padding: 6px 175px;
     border-radius: 10px;
     margin-bottom: 10%;
     height: 40px;
   }
-  .header a {
-    text-decoration: none;
-    text-align: center;
-    color: rgb(112, 108, 108);
-  }
-  .header a:hover {
-    color: black;
-  }
-  .buttonHeader {
-    font-size: 14px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(112, 108, 108);
-    cursor: pointer;
-    transition: 0.6s;
-    margin-bottom: 2.5%;
-  }
-  .buttonHeader.buttonHeader:hover {
-    color: black;
-    background-color: white;
-    border-color: rgb(33, 33, 33);
-  }
   .container1 {
-    margin-top: 40%;
+    margin-top: 50%;
   }
   .projectsTitle {
-    font-size: 20px;
+    margin-top: 60%;
+    font-size: 30px;
   }
   .carousel {
     margin-top: 23px;
@@ -449,38 +439,36 @@ a {
   .projItemContent {
     font-size: 15px;
   }
-  .arrowDown3 {
-    margin-top: 20px;
-    margin-right: 5px;
-  }
 }
 @media (max-width: 448px) {
   .header {
-    font-size: 5px;
+    display: grid;
+    padding: 0px 0px;
+    grid-template-columns: 1fr 1fr;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     height: 80px;
   }
-  .header a {
-    text-decoration: none;
-    text-align: center;
-    color: rgb(112, 108, 108);
+  .header .buttonHeader {
+    font-size: 18px;
+    margin-bottom: -15%;
   }
-  .header a:hover {
-    color: black;
+  .buttonProj {
+    margin-bottom: 15px;
   }
   .projectsTitle {
-    font-size: 17px;
+    margin-top: 60%;
+    font-size: 30px;
   }
   .carousel {
     margin-top: 23px;
-    width: 400px;
+    width: 350px;
   }
   .projPicture {
-    height: 280px;
+    height: 250px;
   }
   .projItemTitle {
-    font-size: 14px;
+    font-size: 20px;
   }
   .projItemContent {
     font-size: 12px;
@@ -491,60 +479,40 @@ a {
     border-radius: 10px;
     background-color: transparent;
     border-color: transparent;
-    color: rgb(112, 108, 108);
+    color: rgb(52, 52, 52);
     cursor: pointer;
     transition: 0.6s;
     margin-left: 10%;
     margin-bottom: 2.5%;
   }
-  .buttonHeader.buttonHeader:hover {
-    color: black;
-    background-color: white;
-    border-color: rgb(33, 33, 33);
-  }
 }
-@media (max-width: 390px) {
+@media (max-width: 448px) and (max-width: 390px) {
   .header {
-    font-size: 5px;
+    font-size: 15px;
     border-radius: 10px;
     margin-bottom: 10%;
     height: 80px;
   }
-  .header a {
-    text-decoration: none;
-    text-align: center;
-    color: rgb(112, 108, 108);
-  }
-  .header a:hover {
-    color: black;
-  }
   .buttonHeader {
-    font-size: 15px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(112, 108, 108);
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 10%;
-    margin-bottom: 2.5%;
-  }
-  .buttonHeader.buttonHeader:hover {
-    color: black;
-    background-color: white;
-    border-color: rgb(33, 33, 33);
+    font-size: 13px;
   }
   .buttonHome {
     width: 60%;
   }
+  .projPicture {
+    margin-right: 200px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 448px) and (max-width: 379px) {
+  .arrowDown2 {
+    margin-bottom: -20px;
+  }
   .container1 {
     margin-top: 50%;
   }
   .projectsTitle {
-    font-size: 15px;
+    margin-top: 60%;
+    font-size: 25px;
   }
   .carousel {
     margin-top: 23px;
@@ -560,37 +528,17 @@ a {
     font-size: 12px;
   }
 }
-@media (max-width: 335px) {
+@media (max-width: 448px) and (max-width: 344px) {
   .header {
-    font-size: 5px;
     border-radius: 10px;
     margin-bottom: 10%;
     height: 80px;
   }
-  .header a {
-    text-decoration: none;
-    text-align: center;
-    color: rgb(112, 108, 108);
+  .paragraphIntro {
+    font-size: 25px;
   }
-  .header a:hover {
-    color: black;
-  }
-  .buttonHeader {
-    font-size: 14px;
-    padding: 0px 5px;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(112, 108, 108);
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 8%;
-    margin-bottom: 2.5%;
-  }
-  .buttonHeader.buttonHeader:hover {
-    color: black;
-    background-color: white;
-    border-color: rgb(33, 33, 33);
+  .descIntro {
+    font-size: 18px;
   }
   .buttonHome {
     width: 80%;
@@ -598,11 +546,9 @@ a {
   .arrowDown {
     margin-bottom: 50%;
   }
-  .arrowDown2 {
-    margin-bottom: 50%;
-  }
   .projectsTitle {
-    font-size: 13px;
+    margin-top: 60%;
+    font-size: 25px;
   }
   .carousel {
     margin-top: 23px;
@@ -612,7 +558,7 @@ a {
     height: 240px;
   }
   .projItemTitle {
-    font-size: 13px;
+    font-size: 12px;
   }
   .projItemContent {
     font-size: 12px;
