@@ -31,7 +31,7 @@
 .arrowDown2 {
   width: 100px;
   height: 50px;
-  margin-top: -10%;
+  margin-top: -5%;
 }
 
 .arrowDown2Upside2 {
@@ -44,7 +44,6 @@
 .arrowDown3 {
   width: 100px;
   height: 50px;
-  margin-top: -10px;
 }
 
 .arrowDown3Upside3 {
@@ -92,13 +91,11 @@ body {
 }
 
 .header {
-  display: inline-block;
   background-color: white;
   padding-top: 11px;
   padding-left: 20px;
   border-radius: 10px;
   height: 50px;
-  width: 100%;
 }
 
 .btn-outline-primary:hover {
@@ -360,6 +357,9 @@ a {
   .projItemContent {
     font-size: 15px;
   }
+  .arrowDown2 {
+    margin-top: 0%;
+  }
 }
 @media (max-width: 610px) {
   .aboutMeMain {
@@ -443,18 +443,14 @@ a {
 @media (max-width: 448px) {
   .header {
     display: grid;
-    padding: 0px 0px;
+    padding: 2% 50%;
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
-    margin-bottom: 20%;
     height: 80px;
   }
   .header .buttonHeader {
     font-size: 18px;
     margin-bottom: -15%;
-  }
-  .buttonProj {
-    margin-bottom: 15px;
   }
   .projectsTitle {
     margin-top: 60%;
@@ -487,12 +483,6 @@ a {
   }
 }
 @media (max-width: 448px) and (max-width: 390px) {
-  .header {
-    font-size: 15px;
-    border-radius: 10px;
-    margin-bottom: 10%;
-    height: 80px;
-  }
   .buttonHeader {
     font-size: 13px;
   }
