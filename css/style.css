@@ -204,6 +204,17 @@ ul, li {
   font-size: 17px;
 }
 
+.iconsbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0px 50%;
+  justify-content: center;
+}
+
+.bi {
+  background-color: blue;
+}
+
 .buttonProj {
   margin-top: 4%;
   width: 40%;
@@ -324,9 +335,6 @@ a {
   }
   .projItemTitle {
     font-size: 20px;
-  }
-  .projItemContent {
-    font-size: 15px;
   }
 }
 @media (max-width: 671px) {
@@ -493,7 +501,7 @@ a {
     margin-right: 200px;
   }
 }
-@media (max-width: 448px) and (max-width: 379px) {
+@media (max-width: 379px) {
   .arrowDown2 {
     margin-bottom: -20px;
   }
@@ -518,7 +526,7 @@ a {
     font-size: 12px;
   }
 }
-@media (max-width: 448px) and (max-width: 344px) {
+@media (max-width: 344px) {
   .header {
     border-radius: 10px;
     margin-bottom: 10%;
