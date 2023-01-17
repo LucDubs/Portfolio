@@ -15,11 +15,6 @@
   background-color: rgba(10, 6, 90, 0.4);
 }
 
-.arrowDown {
-  width: 100px;
-  height: 50px;
-}
-
 .arrowDownUpside {
   width: 100px;
   height: 50px;
@@ -28,10 +23,9 @@
   transform: rotate(180deg);
 }
 
-.arrowDown2 {
+.arrowDown {
   width: 100px;
   height: 50px;
-  margin-top: -5%;
 }
 
 .arrowDown2Upside2 {
@@ -41,15 +35,21 @@
   transform: rotate(180deg);
 }
 
+.arrowDown2 {
+  width: 100px;
+  height: 50px;
+  margin-top: -10%;
+}
+
 .arrowDown3 {
   width: 100px;
   height: 50px;
+  margin-right: -6px;
 }
 
 .arrowDown3Upside3 {
   width: 100px;
   height: 50px;
-  margin-right: 5px;
   transform: rotate(180deg);
 }
 
@@ -262,7 +262,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 40px;
+  height: 51px;
   border-radius: 10px;
   font-size: 17px;
 }
