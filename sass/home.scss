@@ -13,14 +13,29 @@ body{
   width: 100%;
 }
 .header{
-  // display: inline-block;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: white;
   padding-top: 11px;
   padding-left: 20px;
   border-radius: 10px;
   height: 50px;
 }
-
+// .headerImage1{
+//   width: 32px;
+//   background-color: blue;
+//   border-radius: 30px;
+//   height: 30px;
+//   margin-left: 87%;
+//   padding-right: 0;
+// }
+// .headerImage2{
+//   width: 32px;
+//   height: 30px;
+//   border-radius: 30px;
+//   // margin-left: 88%;
+//   // padding-right: 5%;
+// }
 .btn-outline-primary:hover{
   background-color: rgb(10, 6, 90);
   border: none;
@@ -171,7 +186,7 @@ a{
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
   // margin-bottom: 0.5%;
   font-size: 17px;
@@ -186,6 +201,9 @@ a{
 
 ///////////////////////// RESPONSIVIDADE
 @media (max-width: 1047px){
+  // .headerImage1{
+  //   margin-left: 80%;
+  // }
   .carousel-control-prev, .carousel-control-next{
     margin-bottom: 150px;
   }
@@ -222,6 +240,9 @@ a{
   }
 }
 @media (max-width: 993px){
+  // .headerImage1{
+  //   margin-left: 76%;
+  // }
   .header{
     display: flex;
     justify-content: center;
@@ -235,6 +256,9 @@ a{
   
 }
 @media(max-width: 841px){
+  // .headerImage1{
+  //   margin-left: 70%;
+  // }
   .paragraphIntro{
     font-size: 30px;
   }
@@ -255,6 +279,11 @@ a{
   //   font-size: 15px;
   // }
 }
+// @media (max-width: 762px){
+//   .headerImage1{
+//     margin-left: 60%;
+//   }
+// }
 @media (max-width: 671px){
   .buttonHeader{
     font-size: 15px;
@@ -263,8 +292,15 @@ a{
     width: 40%;
   }
 }
-
+// @media (max-width: 700px){
+//   .headerImage1{
+//     margin-left: 55%;
+//   }
+// }
 @media (max-width: 639px){
+  // .headerImage1{
+  //   margin-left: 50%;
+  // }
   .paragraphIntro{
     font-size: 30px;
   }
@@ -290,6 +326,9 @@ a{
 }
 
 @media (max-width: 610px){
+  // .headerImage1{
+  //   margin-left: 35%;
+  // }
   .aboutMeMain{
     display: grid;
   }
@@ -311,6 +350,11 @@ a{
     height: 130vh;
   }
 }
+// @media (max-width: 565px){
+//   .headerImage1{
+//     margin-left: 15%;
+//   }
+// }
 @media (max-width: 537px){
   .projectsTitle{
     margin-top: 50%;
